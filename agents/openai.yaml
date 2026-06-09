@@ -1,0 +1,5 @@
+interface:
+  display_name: "Premortem Forecast by SabrinaArh"
+  short_description: "Verify failure modes before launch"
+  default_prompt: "Use $premortem-forecast to stress-test this plan, verify real Tigers versus Paper Tigers, identify blind spots, break tests, and preventive controls."
+
