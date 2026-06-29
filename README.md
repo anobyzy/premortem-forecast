@@ -70,7 +70,13 @@ git clone https://github.com/anobyzy/premortem-forecast.git ~/.claude/skills/pre
 git clone https://github.com/anobyzy/premortem-forecast.git .claude/skills/premortem-forecast
 ```
 
-**Codex, user-level:**
+**Codex, user-level on Windows PowerShell:**
+
+```powershell
+git clone https://github.com/anobyzy/premortem-forecast.git "$HOME\.codex\skills\premortem-forecast"
+```
+
+**Codex, user-level on macOS/Linux shells:**
 
 ```bash
 git clone https://github.com/anobyzy/premortem-forecast.git ~/.codex/skills/premortem-forecast
