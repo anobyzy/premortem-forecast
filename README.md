@@ -166,4 +166,4 @@ Please keep changes evidence-driven: if you add a new "always check this" rule, 
 
 ## License
 
-[MIT](LICENSE) © Sabrina Arh (SabrinaArh)
+[MIT](LICENSE)
