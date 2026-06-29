@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-7C3AED.svg)](https://docs.claude.com/en/docs/claude-code)
+[![Codex Skill](https://img.shields.io/badge/Codex-Skill-111827.svg)](agents/openai.yaml)
 
 A skeptical, evidence-based **premortem and failure-forecast skill** for AI coding agents. Point it at a plan, design, pull request, codebase, launch, or live system and it works backward from "this already failed" to find *how* it would fail and what would have prevented it — without inventing risks that don't survive verification.
 
@@ -55,23 +56,27 @@ Risks that are silent, hard to reverse, compounding, security/privacy-sensitive,
 
 ## Installation
 
-This is a [Claude Code](https://docs.claude.com/en/docs/claude-code) skill. Skills are auto-discovered from the skills directory.
+This is a portable skill for [Claude Code](https://docs.claude.com/en/docs/claude-code) and Codex-style agent runtimes. Skills are auto-discovered from each runtime's skills directory.
 
-**User-level (available in every project):**
+**Claude Code, user-level (available in every project):**
 
 ```bash
 git clone https://github.com/anobyzy/premortem-forecast.git ~/.claude/skills/premortem-forecast
 ```
 
-**Project-level (committed alongside a repo):**
+**Claude Code, project-level (committed alongside a repo):**
 
 ```bash
 git clone https://github.com/anobyzy/premortem-forecast.git .claude/skills/premortem-forecast
 ```
 
-The final folder name must be `premortem-forecast` so it matches the skill's `name`. That's it — Claude Code loads it automatically on the next session.
+**Codex, user-level:**
 
-> Other agent runtimes (OpenAI/Codex-style) can use the interface defined in [`agents/openai.yaml`](agents/openai.yaml). See [Cross-platform](#cross-platform) below.
+```bash
+git clone https://github.com/anobyzy/premortem-forecast.git ~/.codex/skills/premortem-forecast
+```
+
+The final folder name must be `premortem-forecast` so it matches the skill's `name`. Claude Code and Codex load it automatically on the next session. Codex also reads the interface metadata in [`agents/openai.yaml`](agents/openai.yaml).
 
 ## Usage
 
